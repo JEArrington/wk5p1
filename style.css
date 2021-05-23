@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Poppins:wght@400;600&display=swap');
+
+body{
+    background-image: url(bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+.logo{
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: center;
+}
+
+.illustrationone{
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: end;
+    margin-top: 12em;
+}
+
+.illustrationtwo{
+    display: none;
+}
+
+.build{
+    grid-area: 1 / 2 / 2 / 3;
+    align-self: center;
+    color: whitesmoke;
+    margin-left: 1em;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.huddle{
+    grid-area: 1 / 2 / 2 / 3;
+    align-self: flex-end;
+    margin-bottom: 10em;
+    margin-left: 2em;
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+}
+
+.register{
+    grid-area: 1 / 2 / 2 / 3;
+    align-self: flex-end;
+    margin-bottom: 7em;
+    margin-left: 2em;
+    width: 11em;
+    height: 3em;
+    border-radius: 5em;
+    box-shadow: 1px 1px 1px black;
+    color: hsl(257, 40%, 49%);
+    cursor: pointer;
+}
+
+.facebook{
+    border-radius: 50%;
+    background-color: transparent;
+    border-style: solid;
+    color: whitesmoke;
+}
+
+.twitter{
+    border-radius: 50%;
+    background-color: transparent;
+    border-style: solid;
+    color: whitesmoke;
+}
+
+
+.instagram{
+    border-radius: 50%;
+    background-color: transparent;
+    border-style: solid;
+    color: whitesmoke;
+}
+
+
+ul{
+    grid-area: 1 / 2 / 2 / 3;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+
+
+
+
+@media only screen and (max-width: 375px) {
+    body{
+        margin: 1em;
+    }
+    
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo{
+        align-self: flex-start;
+        margin-top: 1em;
+        width: 50%;
+    }
+
+    .illustrationone{
+        align-self: center;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    h1{
+        font-weight: 400;
+    }
+
+    .register{
+        align-self: center;
+    }
+
+    ul{
+        align-self: center;
+        margin-right: .5em;
+    }
+
+}
+
+
+                                                                                                  
