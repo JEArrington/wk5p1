@@ -30,6 +30,10 @@ body{
     margin-top: 12em;
 }
 
+img{
+    width: 100%;
+}
+
 .illustrationtwo{
     display: none;
 }
@@ -54,6 +58,7 @@ h1{
     color: whitesmoke;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    font-weight: inherit;
 }
 
 button:hover{
@@ -103,10 +108,52 @@ ul{
 }
 
 
+@media only screen and (max-width: 925px) {
+    body{
+        margin: 1em;
+    }
+    
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo{
+        align-self: flex-start;
+        margin-top: 1em;
+        width: 50%;
+    }
+
+    .illustrationone{
+        align-self: center;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    h1{
+        font-weight: 400;
+    }
+
+    .huddle{
+        align-self: center;
+    }
+
+    .register{
+        align-self: center;
+    }
+
+    ul{
+        align-self: center;
+        margin-right: .5em;
+    }
+
+}
 
 
-
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 376px) {
     body{
         margin: 1em;
     }
